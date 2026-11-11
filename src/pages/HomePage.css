@@ -1,0 +1,189 @@
+/* ===== Hero Section ===== */
+.hero-section {
+  text-align: center;
+  padding: var(--space-2xl) 0 var(--space-xl);
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.1;
+  margin-bottom: var(--space-lg);
+  color: var(--color-coffee-dark);
+}
+
+.hero-subtitle {
+  max-width: 640px;
+  margin: 0 auto var(--space-xl);
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.hero-stat-number {
+  font-family: var(--font-hand);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-coffee-medium);
+}
+
+.hero-stat-label {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* ===== Map Section ===== */
+.map-section {
+  padding: var(--space-xl) 0;
+}
+
+.map-wrapper {
+  margin-bottom: var(--space-md);
+}
+
+.map-legend-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== Bean Belt Section ===== */
+.belt-section {
+  padding: var(--space-xl) 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--space-md);
+  color: var(--color-coffee-dark);
+}
+
+.section-text {
+  max-width: 700px;
+  margin: 0 auto var(--space-xl);
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--color-text-light);
+}
+
+.bean-belt-detail {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.belt-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-paper-light);
+  border: 2px solid var(--color-land-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.belt-stat-icon {
+  font-size: 1.5rem;
+}
+
+.belt-stat-value {
+  font-family: var(--font-hand);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-coffee-medium);
+}
+
+.belt-stat-text {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* ===== Continents Section ===== */
+.continents-section {
+  padding: var(--space-xl) 0;
+}
+
+.continent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.continent-card {
+  text-align: center;
+}
+
+.continent-card-clickable {
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.continent-card-clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.continent-name {
+  font-size: 1.4rem;
+  color: var(--color-coffee-dark);
+  margin-bottom: var(--space-xs);
+}
+
+.continent-count {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.continent-flags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.continent-flag-link {
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+  display: inline-block;
+}
+
+.continent-flag-link:hover {
+  transform: scale(1.2);
+}
+
+.continent-more {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .hero-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  .continent-grid {
+    grid-template-columns: 1fr;
+  }
+}

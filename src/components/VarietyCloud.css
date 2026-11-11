@@ -1,0 +1,298 @@
+/* ===== Variety Cloud ===== */
+.variety-cloud {
+  padding: 0;
+}
+
+/* ---- Categories ---- */
+.variety-categories {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.variety-category {
+  /* no extra styles needed */
+}
+
+.variety-cat-heading {
+  font-family: var(--font-hand);
+  font-size: 1.3rem;
+  color: var(--cat-color, var(--color-accent));
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px dashed var(--cat-color, var(--color-land-border));
+  opacity: 0.8;
+}
+
+/* ---- Tag Cloud ---- */
+.variety-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.variety-tag {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  border: 1.5px solid var(--color-land-border);
+  border-radius: 100px;
+  background: var(--color-paper-light);
+  color: var(--color-text-light);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.variety-tag:hover {
+  border-color: var(--cat-color, var(--color-accent));
+  background: var(--cat-bg, var(--color-coffee-pale));
+  color: var(--cat-color, var(--color-accent));
+  transform: translateY(-1px);
+  box-shadow: 2px 2px 0 rgba(62, 39, 35, 0.08);
+}
+
+.variety-tag--active {
+  background: var(--cat-color, var(--color-accent));
+  color: #fff;
+  border-color: var(--cat-color, var(--color-accent));
+  box-shadow: 2px 2px 0 rgba(62, 39, 35, 0.15);
+}
+
+.variety-tag--active:hover {
+  background: var(--cat-color, var(--color-accent));
+  color: #fff;
+  transform: none;
+}
+
+/* ---- Results Panel ---- */
+.variety-results {
+  margin-top: var(--space-lg);
+  padding: var(--space-lg);
+  animation: resultsIn 0.2s ease;
+}
+
+@keyframes resultsIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.variety-results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-land-border);
+}
+
+.variety-results-name {
+  font-family: var(--font-hand);
+  font-size: 1.4rem;
+  color: var(--color-coffee-dark);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.variety-results-cat {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  background: var(--color-paper-dark);
+  padding: 2px 8px;
+  border-radius: 100px;
+}
+
+/* ---- Variety Description ---- */
+.variety-results-desc {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin: 0 0 var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-paper-dark);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-accent-light);
+}
+
+.variety-results-close {
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid var(--color-land-border);
+  border-radius: 50%;
+  background: var(--color-paper-light);
+  color: var(--color-text-muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  line-height: 1;
+}
+
+.variety-results-close:hover {
+  background: var(--color-equator);
+  color: #fff;
+  border-color: var(--color-equator);
+}
+
+/* ---- Results Sections ---- */
+.variety-results-section {
+  margin-bottom: var(--space-md);
+}
+
+.variety-results-section:last-child {
+  margin-bottom: 0;
+}
+
+.variety-results-label {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+/* ---- Country Chips ---- */
+.variety-results-countries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.variety-country-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1.5px solid var(--color-land-border);
+  border-radius: var(--radius-md);
+  background: var(--color-paper-light);
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  transition: all 0.15s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.variety-country-link:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.variety-country-flag {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.variety-country-name {
+  color: var(--color-text);
+}
+
+/* ---- Region Links ---- */
+.variety-results-regions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.variety-region-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border: 1.5px dashed var(--color-land-border);
+  border-radius: var(--radius-md);
+  background: var(--color-paper-light);
+  color: var(--color-text-light);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  transition: all 0.15s ease;
+}
+
+.variety-region-link:hover {
+  border-style: solid;
+  border-color: var(--color-accent-light);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.variety-region-flag {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.variety-region-name {
+  color: var(--color-text);
+}
+
+.variety-region-country {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* ---- Dark Theme ---- */
+[data-theme='dark'] .variety-tag {
+  background: var(--color-paper-dark);
+  border-color: var(--color-land-border);
+}
+
+[data-theme='dark'] .variety-tag:hover {
+  background: var(--cat-bg, rgba(201, 146, 94, 0.12));
+}
+
+[data-theme='dark'] .variety-tag--active {
+  background: var(--cat-color, var(--color-accent));
+  color: #1a1210;
+}
+
+[data-theme='dark'] .variety-results-close {
+  background: var(--color-paper-dark);
+}
+
+[data-theme='dark'] .variety-results-cat,
+[data-theme='dark'] .variety-results-desc {
+  background: var(--color-paper-dark);
+}
+
+[data-theme='dark'] .variety-country-link,
+[data-theme='dark'] .variety-region-link {
+  background: var(--color-paper-dark);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 640px) {
+  .variety-tags {
+    gap: var(--space-xs);
+  }
+
+  .variety-tag {
+    font-size: 0.8rem;
+    padding: 3px 10px;
+  }
+
+  .variety-results {
+    padding: var(--space-md);
+  }
+
+  .variety-results-countries,
+  .variety-results-regions {
+    gap: var(--space-xs);
+  }
+}

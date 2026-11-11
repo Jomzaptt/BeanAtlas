@@ -1,0 +1,95 @@
+export const en = {
+  header: {
+    title: 'BeanAtlas',
+    tagline: 'Explore the World of Coffee',
+  },
+  home: {
+    hero: {
+      title: 'Coffee Origins,<br />Mapped.',
+      subtitle:
+        'Every coffee bean tells a story. Explore the <strong>50+ countries</strong> that grow the world\'s coffee — from the sun-drenched highlands of Ethiopia to the volcanic soils of Central America.',
+      countries: 'Coffee-Growing Countries',
+      production: 'Tonnes Produced Yearly',
+      belt: 'The Bean Belt',
+    },
+    belt: {
+      title: 'The Coffee Bean Belt',
+      text:
+        'Coffee grows in the equatorial band between the <strong>Tropic of Cancer (23.5°N)</strong> and the <strong>Tropic of Capricorn (23.5°S)</strong> — known as the "Bean Belt." This region offers the perfect combination of warmth, rainfall, and altitude that coffee plants need to thrive. The darker a country appears on the map, the more coffee it produces.',
+      southAmerica: 'South America',
+      southeastAsia: 'Southeast Asia',
+      africa: 'Africa',
+      centralAmerica: 'Central America',
+    },
+    continents: {
+      title: 'Explore by Region',
+      countries: 'countries',
+    },
+    varieties: {
+      title: 'Explore by Bean Variety',
+      subtitle: 'Discover where each coffee variety is grown around the world.',
+      arabica: 'Arabica',
+      robusta: 'Robusta',
+      liberica: 'Liberica',
+      hybrids: 'Hybrids',
+      countries: 'Countries',
+      regions: 'Regions',
+      clearFilter: 'Clear filter',
+    },
+  },
+  continent: {
+    'south-america': 'South America',
+    'central-america': 'Central America & Caribbean',
+    africa: 'Africa',
+    asia: 'Asia & Middle East',
+    oceania: 'Oceania',
+  },
+  map: {
+    equator: 'Equator',
+    tropicCancer: 'Tropic of Cancer',
+    tropicCapricorn: 'Tropic of Capricorn',
+    beanBelt: '☕ The Bean Belt',
+  },
+  legend: {
+    title: 'Production Volume',
+    nonProducer: 'Non-producer',
+  },
+  country: {
+    breadcrumb: 'BeanAtlas',
+    production: 'Production',
+    about: 'About',
+    history: 'History',
+    flavorProfile: 'Flavor Profile',
+    growingConditions: 'Growing Conditions',
+    altitude: 'Altitude',
+    processing: 'Processing',
+    varieties: 'Varieties',
+    funFact: 'Did you know?',
+    regions: 'Growing Regions',
+    regionsText: 'Click a region to learn more about its unique terroir and flavor profile.',
+    regionsCta: 'Explore region →',
+    notFound: 'Country not found',
+    notFoundText: "The coffee-growing country you're looking for doesn't exist in our atlas.",
+    rank: {
+      top: 'Top producer',
+      major: 'Major producer',
+      growing: 'Growing producer',
+      small: 'Small-scale producer',
+    },
+  },
+  region: {
+    notFound: 'Region not found',
+    notFoundText: "The coffee-growing region you're looking for isn't in our atlas yet.",
+    countryInfo: 'Country Info',
+    viewCountry: 'View country →',
+    notableFor: 'Notable For',
+    back: '← Back to',
+    backToMap: '← Back to Map',
+  },
+  countryOutline: {
+    notAvailable: 'Map data not available',
+  },
+  footer: {
+    text: 'Mapping the world\'s coffee origins',
+  },
+}

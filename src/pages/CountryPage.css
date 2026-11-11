@@ -1,0 +1,222 @@
+/* ===== Breadcrumb ===== */
+.breadcrumb {
+  font-family: var(--font-hand);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-lg);
+  color: var(--color-text-muted);
+}
+
+.breadcrumb a {
+  color: var(--color-accent);
+}
+
+.breadcrumb-sep {
+  margin: 0 var(--space-sm);
+  color: var(--color-land-border);
+}
+
+/* ===== Layout ===== */
+.country-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.country-outline-col {
+  position: sticky;
+  top: 100px;
+}
+
+/* ===== Country Header ===== */
+.country-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.country-flag-large {
+  font-size: 3rem;
+}
+
+.country-name {
+  font-size: 2.2rem;
+  margin-bottom: var(--space-xs);
+}
+
+/* ===== Production Section ===== */
+.country-prod-section {
+  margin-bottom: var(--space-lg);
+}
+
+.country-prod-section h3,
+.country-desc-section h3,
+.country-history-section h3,
+.country-flavor-section h3,
+.country-growing-section h3 {
+  font-family: var(--font-hand);
+  font-size: 1.3rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-coffee-dark);
+}
+
+.country-prod-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-xs);
+  font-size: 0.9rem;
+}
+
+.country-prod-value {
+  font-weight: 600;
+  color: var(--color-coffee-medium);
+}
+
+.country-prod-rank {
+  color: var(--color-text-muted);
+}
+
+/* ===== Growing Info ===== */
+.country-desc-section,
+.country-history-section,
+.country-flavor-section,
+.country-growing-section {
+  margin-bottom: var(--space-lg);
+}
+
+.growing-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.growing-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-paper);
+  border: 1.5px solid var(--color-land-border);
+  border-radius: var(--radius-sm);
+}
+
+.growing-icon {
+  font-size: 1.2rem;
+}
+
+.growing-label {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  min-width: 80px;
+}
+
+.growing-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+/* ===== Fun Fact ===== */
+.country-funfact {
+  display: flex;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--color-funfact-bg);
+  border: 2px dashed var(--color-accent-light);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-lg);
+}
+
+.funfact-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.country-funfact p {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--color-coffee-medium);
+  margin: 0;
+}
+
+/* ===== Regions Section ===== */
+.regions-section {
+  padding: var(--space-xl) 0;
+}
+
+.regions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.region-card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.region-card-header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+}
+
+.region-name {
+  font-size: 1.3rem;
+  color: var(--color-coffee-dark);
+}
+
+.region-name-zh {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.region-desc-preview {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.region-flavor {
+  margin: var(--space-xs) 0;
+}
+
+.region-cta {
+  font-family: var(--font-hand);
+  font-size: 1rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-top: auto;
+}
+
+/* ===== Not Found ===== */
+.not-found {
+  text-align: center;
+  padding: var(--space-3xl) 0;
+}
+
+.not-found h2 {
+  margin-bottom: var(--space-md);
+}
+
+.not-found p {
+  margin-bottom: var(--space-xl);
+  color: var(--color-text-muted);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .country-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .country-outline-col {
+    position: static;
+  }
+}

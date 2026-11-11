@@ -1,0 +1,31 @@
+.world-map-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color-land-border);
+  border-radius: var(--radius-md);
+  background: var(--color-paper-dark);
+  box-shadow: var(--shadow-md);
+  cursor: grab;
+  user-select: none;
+}
+
+.world-map-container.grabbing {
+  cursor: grabbing;
+}
+
+.world-map-container svg {
+  display: block;
+}
+
+.country-path {
+  transition: filter 0.2s ease;
+}
+
+.country-path.producer:hover {
+  filter: brightness(1.15) drop-shadow(0 0 4px rgba(62, 39, 35, 0.3));
+}
+
+[data-theme="dark"] .country-path.producer:hover {
+  filter: brightness(1.25) drop-shadow(0 0 6px rgba(212, 165, 116, 0.35));
+}

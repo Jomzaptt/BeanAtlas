@@ -1,0 +1,95 @@
+export const zh = {
+  header: {
+    title: 'BeanAtlas',
+    tagline: '探索世界咖啡版图',
+  },
+  home: {
+    hero: {
+      title: '咖啡产地，\n一图览尽。',
+      subtitle:
+        '每一颗咖啡豆都有自己的故事。探索全球 <strong>50 多个</strong>咖啡产国——从埃塞俄比亚的阳光高地到中美洲的火山沃土。',
+      countries: '咖啡产国',
+      production: '年产量（吨）',
+      belt: '咖啡种植带',
+    },
+    belt: {
+      title: '咖啡种植带',
+      text:
+        '咖啡生长在北回归线（23.5°N）与南回归线（23.5°S）之间的赤道地带——即"咖啡种植带"。这一区域拥有咖啡种植所需的理想温度、降雨量和海拔条件。地图上颜色越深的国家，咖啡产量越高。',
+      southAmerica: '南美洲',
+      southeastAsia: '东南亚',
+      africa: '非洲',
+      centralAmerica: '中美洲',
+    },
+    continents: {
+      title: '按产区探索',
+      countries: '个产国',
+    },
+    varieties: {
+      title: '按豆种探索',
+      subtitle: '点击豆种查看全球有哪些国家和产区种植。',
+      arabica: '阿拉比卡',
+      robusta: '罗布斯塔',
+      liberica: '利比里卡',
+      hybrids: '杂交种',
+      countries: '产国',
+      regions: '产区',
+      clearFilter: '清除筛选',
+    },
+  },
+  continent: {
+    'south-america': '南美洲',
+    'central-america': '中美洲及加勒比',
+    africa: '非洲',
+    asia: '亚洲及中东',
+    oceania: '大洋洲',
+  },
+  map: {
+    equator: '赤道',
+    tropicCancer: '北回归线',
+    tropicCapricorn: '南回归线',
+    beanBelt: '☕ 咖啡种植带',
+  },
+  legend: {
+    title: '产量图例',
+    nonProducer: '非产国',
+  },
+  country: {
+    breadcrumb: 'BeanAtlas',
+    production: '产量',
+    about: '介绍',
+    history: '历史',
+    flavorProfile: '风味特征',
+    growingConditions: '种植条件',
+    altitude: '海拔',
+    processing: '处理法',
+    varieties: '豆种',
+    funFact: '你知道吗？',
+    regions: '产区',
+    regionsText: '点击产区了解其独特的风土条件和风味特征。',
+    regionsCta: '探索产区 →',
+    notFound: '未找到该产国',
+    notFoundText: '您查找的咖啡产国不在我们的图集中。',
+    rank: {
+      top: '顶级产国',
+      major: '主要产国',
+      growing: '发展中产国',
+      small: '小型产国',
+    },
+  },
+  region: {
+    notFound: '未找到该产区',
+    notFoundText: '您查找的咖啡产区不在我们的图集中。',
+    countryInfo: '产国信息',
+    viewCountry: '查看产国 →',
+    notableFor: '知名特色',
+    back: '← 返回',
+    backToMap: '← 返回地图',
+  },
+  countryOutline: {
+    notAvailable: '暂无地图数据',
+  },
+  footer: {
+    text: '绘制全球咖啡产地版图',
+  },
+}

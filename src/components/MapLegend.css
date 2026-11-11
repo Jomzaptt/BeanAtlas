@@ -1,0 +1,46 @@
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--color-paper-light);
+  border: 2px solid var(--color-land-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.legend-title {
+  font-family: var(--font-hand);
+  font-size: 1.1rem;
+  color: var(--color-text);
+  margin: 0;
+  min-width: 100px;
+}
+
+.legend-steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+}
+
+.legend-swatch {
+  width: 16px;
+  height: 12px;
+  border: 1px solid var(--color-land-border);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.legend-label {
+  white-space: nowrap;
+}

@@ -1,0 +1,15 @@
+.country-outline {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 2px solid var(--color-land-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  background: var(--color-paper);
+}
+
+.country-outline-svg {
+  display: block;
+  width: 100%;
+}
